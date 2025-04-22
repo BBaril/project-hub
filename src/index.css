@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section {
+  scroll-margin-top: 6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-title-shadow {
+  text-shadow: 2.25px 1.5px #00ffff;
+}
+
+.dark .custom-title-shadow {
+  text-shadow:
+    1px 1px 2px black,
+    2px 2px 4px #1ecbe1;
+}
+
+.project-card:hover {
+  background-color: #f0f4f8;
+}
+
+.dark .project-card:hover {
+  background-color: #1e293b;
+}
+
+.tag {
+  transition: background 0.2s, color 0.2s;
+}
+
+.tag:hover {
+  background-color: #00ffff;
+  color: #000000;
+}
+
+.dark .tag:hover {
+  background-color: #00ffff;
+  color: #000000;
+}
