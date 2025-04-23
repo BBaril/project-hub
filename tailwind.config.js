@@ -8,27 +8,29 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bbCyan: '#00ffff', // custom color for BB
-        bbGreen: '#0fcc66',
-        bbOrange: '#ffbe0b',
-        bbCitrine: '#ffff99',
-        bbSoftRose: '#ff93cb',
-        bbCyanDarker: '#19e5e6',
-        bbSkyLavender: '#85b3ff',
-        bbBlueGrotto: '#3a86ff',
-        bbOffWhite: '#f5faff',
-        bbCharcoal: '#1e1e1e',
-        bbMidnightIndigo: '#2a2e45',
-        bbPurple: '#bfb5ff',
-        bbLiteYellow: '#fefeff',
+        bbCyan: '#5eead4',
+        bbGreen: '#4ade80',
+        bbOrange: '#fbbf24',
+        bbCitrine: '#fef08a',
+        bbSoftRose: '#f9a8d4',
+        bbCyanDarker: '#2dd4bf',
+        bbSkyLavender: '#a5b4fc',
+        bbBlueGrotto: '#60a5fa',
+        bbOffWhite: '#f8fafc',
+        bbCharcoal: '#1f2937',
+        bbMidnightIndigo: '#334155',
+        bbPurple: '#c4b5fd',
+        bbLiteYellow: '#fefce8',
+        bbTest: '#00ffff',
+        bbTest2: '#19e5e6'
       },
       fontFamily: {
         title: ['Lora', 'serif'],
         body: ['"Helvetica Neue"', 'sans-serif'],
       },
-      
     },
   },
+  
   plugins: [],
 }
 

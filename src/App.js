@@ -83,10 +83,10 @@ export default function App() {
         </div>
       </header>
 
-      <hr className="border-t-4 border-bbCyanDarker dark:border-t-2 border-bbCyanDarker my-3 shadow-md" />
+      <hr className="border-t-4 border-bbTest2 dark:border-t-2 my-3 shadow-md" />
 
       <div className="text-center space-y-2 mb-5 mt-2">
-      <h2 className="text-[2.75rem] font-title font-bold text-black mt-34 dark:text-bbCyan custom-title-shadow">
+      <h2 className="text-[2.75rem] font-title font-bold text-black mt-34 dark:text-bbTest custom-title-shadow">
         Bethany Baril
       </h2>
 
@@ -95,7 +95,7 @@ export default function App() {
         </h3>
       </div>
 
-      <hr className="border-t-4 border-bbCyanDarker mb-6 dark:border-t-2 border-bbCyanDarker my-3 shadow-md" />
+      <hr className="border-t-4 border-bbTest2 mb-6 dark:border-t-2 my-3 shadow-md" />
 
       <TagFilter
         tags={allTags}
@@ -200,7 +200,7 @@ export default function App() {
       </div>
 
     
-      <hr className="border-t-4 border-bbCyanDarker mb-1 mt-8 dark:border-t-2 border-bbCyanDarker my-3 shadow-md" />
+      <hr className="border-t-4 border-bbTest2 mb-1 mt-8 dark:border-t-2 my-3 shadow-md" />
       <footer className="text-center mt-6">
         <div className="text-xl font-semibold text-bbMidnightIndigo mt-2 dark:text-bbOffWhite">
           <a href="#web-interface" className="mr-4 hover:text-bbMidnightIndigo hover:underline decoration-bbCyanDarker dark:hover:underline decoration-bbCyan dark:hover:text-bbCyan">Web Interfaces</a>
@@ -213,7 +213,7 @@ export default function App() {
             rel="noopener noreferrer"
             className="ml-4 text-bbMidnightIndigo hover:underline decoration-bbCyanDarker dark:text-bbOffWhite dark:hover:underline decoration-bbCyan dark:hover:text-bbCyan">Contact Me</a>
         </div>
-        <hr className="border-t-4 border-bbCyanDarker mb-4 mt-6 dark:border-t-2 border-bbCyanDarker my-3 shadow-md" />
+        <hr className="border-t-4 border-bbTest2 mb-4 mt-6 dark:border-t-2 my-3 shadow-md" />
         <p className="text-sm text-gray-600 mt-4 dark:text-gray-400">
           Copyright ©2025 Bethany Baril. All Rights Reserved.
         </p>
