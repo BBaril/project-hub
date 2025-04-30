@@ -1,19 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    images: {
-      domains: ['your-image-domains.com'], // optional for external image usage
-    },
-  };
-  
-  module.exports = module.exports = {
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: '**', // or a specific domain like 'images.unsplash.com'
-        },
-      ],
-    },
-  };
+  reactStrictMode: true,
+  output: 'export', // ✅ Tells Next.js to generate a static site
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**', // ✅ Matches any external image source
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
+
   
