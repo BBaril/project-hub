@@ -1,0 +1,90 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+section {
+    scroll-margin-top: 6rem;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .custom-title-shadow {
+    text-shadow: 2.5px 2.75px #66cccc;
+  }
+  
+
+  .dark .custom-title-shadow {
+    text-shadow:
+      1px 1px 2px black,
+      2px 2px 6px #66f2ff;
+  }
+  
+  .custom-title-shadow2 {
+    text-shadow: 1.25px 1.25px #66cccc;
+  }
+  
+  .dark .custom-title-shadow2 {
+    text-shadow:
+      1px 1px 2px black,
+      1.75px 1.75px 4px #5cb8b8;
+  }
+
+
+  .project-card:hover {
+    background-color: #f0f4f8;
+  }
+  
+  .dark .project-card:hover {
+    background-color: #1e293b;
+  }
+  
+  .tag {
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .tag:hover {
+    background-color: #64d8e8;
+    color: #000000;
+  }
+  
+  .dark .tag:hover {
+    background-color: #64d8e8;
+    color: #000000;
+  }
+
+  .border-t {
+    border-top-width: 3px;
+}
+
+.py-2 {
+  padding-top: 1.25rem /* 8px */;
+  padding-bottom: 1.25rem /* 8px */;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-title text-black dark:text-bbOffWhite font-bold;
+  }
+
+  p, span, li, a, button {
+    @apply font-body text-black dark:text-gray-100;
+  }
+}
+
+select option {
+  background-color: #fef7f0; /* softened light teal (pastel, no opacity) */
+  color: #000000; /* black text */
+
+}
+
+.dark select option {
+    background-color: rgb(31, 41, 55);
+    color: #405ad4;
+  }
+
+
+
+
+

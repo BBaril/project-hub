@@ -71,7 +71,7 @@ const projectsData = [
       title: 'Movie Login System',
       description: 'A secure login and registration system with user input validation, and database integration.',
       fullDescription: 'This project implements user authentication to control access to a planned movie catalog. It focuses on registration, hashed password storage, and login flow.',
-      tags: ['Python', 'Flask', 'Auth', 'Login', 'Security', 'Personal Project', 'SQLite'],
+      tags: ['Python', 'Flask', 'Auth', 'Login', 'Security', 'SQLite', 'Personal Project'],
       target: 'Future family users and admins managing a private digital archive.',
       problem: 'My first backend project designed to run locally.',
       empathy: 'Built with family-friendly design and safe user storage in mind.',

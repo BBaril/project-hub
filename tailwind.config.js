@@ -4,30 +4,43 @@
 
 module.exports = {
   darkMode: 'class',
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+  ],
+  
   theme: {
     extend: {
       colors: {
-        bbCyan: '#5eead4',
-        bbGreen: '#4ade80',
-        bbOrange: '#fbbf24',
-        bbCitrine: '#fef08a',
-        bbSoftRose: '#f9a8d4',
-        bbCyanDarker: '#2dd4bf',
-        bbSkyLavender: '#a5b4fc',
-        bbBlueGrotto: '#60a5fa',
-        bbOffWhite: '#f8fafc',
-        bbCharcoal: '#1f2937',
-        bbMidnightIndigo: '#334155',
-        bbPurple: '#c4b5fd',
-        bbLiteYellow: '#fefce8',
-        bbTest: '#00ffff',
-        bbTest2: '#19e5e6'
+        bbTeal: '#66cccc',
+        bbTealDark: '#5cb8b8',
+        bbBlueSoft: '#55b6f6',
+        bbBlueSoftDark: '#4da4dd',
+        bbBlue: '#4776eb',
+        bbBlueDark: '#406ad4',
+        bbPurple: '#c175d7',
+        bbPurpleDark: '#9966cc',
+        bbPink: '#dc89b0',
+        bbPinkDark: '#cc6696',
+        bbOrange: '#f7b56e',
+        bbOrangeDark: '#dea363',
+        bbGreenSoft: '#78d589',
+        bbGreenSoftDark: '#4ab582',
+        bbGreen: '#8bce4b',
+        bbGreenDark: '#5ba145',
+        bbOffWhite: '#f5faff',
+        bbOffWhiteSoft: '#f6fbf6',
+        bbOffBlack: '#1e1e1e',
+        bbOffBlackSoft: '#2b2b2b',
+        bbPopSoft: '#64d8e8',
+        bbPop: '#66f2ff',
       },
       fontFamily: {
-        title: ['Lora', 'serif'],
+        title: ['var(--font-merriweather)', 'serif'],
         body: ['"Helvetica Neue"', 'sans-serif'],
       },
+      
+      
     },
   },
   
