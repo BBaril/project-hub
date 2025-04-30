@@ -18,13 +18,29 @@ const merriweather = Merriweather({
 
 export const metadata = {
   title: 'Project Hub | Bethany Baril',
-  description: 'Explore Bethany Baril’s full-stack and UI/UX projects: web apps, desktop tools, and creative showcases.',
+  description: 'Explore the UI/UX, full-stack, and creative projects of Bethany Baril. Filter by tech and discover interactive demos.',
   openGraph: {
     title: 'Project Hub | Bethany Baril',
-    description: 'Live demos and real work — explore projects by category and tag.',
-    images: ['/og-preview.png'], // optional
+    description: 'Explore categorized projects, live demos, and polished UI in Bethany’s interactive coding hub.',
+    url: 'https://project-hub-seven.vercel.app',
+    images: [
+      {
+        url: '/og-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bethany Baril Project Hub',
+      },
+    ],
+    type: 'website',
   },
-}
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Project Hub | Bethany Baril',
+    description: 'Explore live projects and polished design by Bethany Baril.',
+    images: ['/og-preview.png'],
+  },
+};
+
 
 
 export default function RootLayout({ children }) {
