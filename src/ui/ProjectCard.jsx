@@ -172,7 +172,7 @@ function tagColor(tag) {
     const mobile = ['Flutter (Dart)'];
     const creative = ['Photoshop', 'Creative', 'Animation', 'Audio', 'Adventure Story', 'Sound', 'Personal Project'];
     const tools = ['Terminal', 'CLI', 'ETL', 'Dev Tool', 'Math', 'Utilities'];
-    const client = ['Client Work', 'Website'];
+    const client = ['Client Work', 'Website', 'Layout', 'Responsive Design'];
   
     if (frontend.includes(tag)) return 'bg-bbPink';
     if (backend.includes(tag)) return 'bg-bbBlueSoft';
