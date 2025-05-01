@@ -165,10 +165,10 @@ export default function ProjectCard({ project }) {
 }
 
 function tagColor(tag) {
-    const frontend = ['React', 'Tailwind', 'JavaScript', 'HTML', 'CSS', 'UI/UX', 'Figma', 'Next.js', 'JSON','Static', 'GitHub'];
+    const frontend = ['React', 'Tailwind', 'JavaScript', 'HTML', 'CSS', 'UI/UX', 'Figma', 'Next.js', 'JSON', 'Static', 'GitHub'];
     const backend = ['Flask', 'API', 'Auth', 'Python', 'Java', 'Node.js', 'Django', 'Login', 'Security'];
     const database = ['MySQL', 'SQLite'];
-    const gui = ['Tkinter','Desktop GUI'];
+    const gui = ['Tkinter', 'Desktop GUI'];
     const mobile = ['Flutter (Dart)'];
     const creative = ['Photoshop', 'Creative', 'Animation', 'Audio', 'Adventure Story', 'Sound', 'Personal Project'];
     const tools = ['Terminal', 'CLI', 'ETL', 'Dev Tool', 'Math', 'Utilities'];

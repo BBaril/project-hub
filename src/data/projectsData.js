@@ -175,7 +175,10 @@ const projectsData = [
       description: "A static HTML/CSS portfolio project with hamburger nav.",
       fullDescription:
         "This was my first portfolio website, hand-coded in HTML and CSS with a floating menu, smooth scroll, and contact section. It marked the beginning of my front-end journey and laid the foundation for my upgraded React + Next projects.",
-      tags: ['HTML', 'CSS', 'JavaScript', 'Static',  'GitHub', 'Personal Project',],
+      tags: ['HTML', 'CSS', 'JavaScript', 'Static',  'GitHub', 'Client Work', 'Website', 'Personal Project',],
+      uxDetails: {
+        text: "My first portfolio was built with static HTML and CSS — no frameworks, no development server. It laid the foundation for everything I’ve built since, and taught me the value of structure, spacing, and clean presentation.",
+      },
       target: "Employers and visitors reviewing my early design progress.",
       problem: "Needed a way to present projects and skills visually without a JS framework.",
       empathy: "Optimized for smooth scrolling and simple layout to guide users easily.",
