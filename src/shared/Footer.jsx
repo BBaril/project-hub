@@ -13,7 +13,7 @@ export default function Footer() {
         <Link href="#web-interface" className="text-black dark:text-bbOffWhite/80 hover:text-bbPinkDark/70 dark:hover:text-bbPink/80 transition">Web</Link>
         <Link href="#creative-projects" className="text-black dark:text-bbOffWhite/80 hover:text-bbPinkDark/70 dark:hover:text-bbPink/80 transition">Creative</Link>
         <Link href="#utility-apps" className="text-black dark:text-bbOffWhite/80 hover:text-bbPinkDark/70 dark:hover:text-bbPink/80 transition">Utility</Link>
-        <Link href="https://bethany-baril-portfolio.netlify.app/#contact" target="_blank" className=" text-black dark:text-bbOffWhite/80 hover:text-bbPinkDark/70 dark:hover:text-bbPink/80 transition">Contact</Link>
+        <Link href="https://bethanybaril.com/#contact" target="_blank" className=" text-black dark:text-bbOffWhite/80 hover:text-bbPinkDark/70 dark:hover:text-bbPink/80 transition">Contact</Link>
       </div>
       <div className="h-[.15rem] max-w-full mx-auto bg-bbTeal dark:bg-bbTealDark/90 my-2 rounded-full" />
       <div className="mt-10 mb-6 text-xs text-gray-500 dark:text-gray-400">

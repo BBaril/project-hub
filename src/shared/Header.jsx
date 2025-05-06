@@ -38,7 +38,7 @@ export default function Header() {
       <div className="flex justify-between items-center px-1 py-1.5 mt-1 mb-1 max-w-7xl mx-auto">
         {/* Logo + Title */}
         <div className="flex items-center gap-2 ml-6">
-          <Link href="https://bethany-baril-portfolio.netlify.app">
+          <Link href="https://bethanybaril.com">
             <Image
               src="/bbLogo3.png"
               alt="Bethany Baril Logo"
@@ -105,7 +105,7 @@ export default function Header() {
                   Utility
                 </a>
                 <a
-                  href="https://bethany-baril-portfolio.netlify.app/#contact"
+                  href="https://bethanybaril.com/#contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMenuOpen(false)}

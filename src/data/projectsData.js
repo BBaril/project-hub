@@ -6,7 +6,7 @@ const projectsData = [
       title: 'Home Sweet Home',
       description: 'A calming, southern-inspired website for household services.',
       fullDescription: 'This static site was built to support a friend’s household assistance business, offering chores and non-medical daily help for older adults.',
-      tags: ['JavaScript', 'HTML', 'CSS', 'JSON', 'Next.js', 'GitHub', 'Photoshop', 'Personal Project', 'Client Work', 'Website'],
+      tags: ['JavaScript', 'HTML', 'CSS',  'Next.js', 'JSON','GitHub', 'Photoshop', 'Personal Project', 'Client Work', 'Website'],
       uxDetails: {
         text: "This project started with a flat layout. After feedback, I iterated with new sectioning, added icons, and focused on navigation clarity for older users.",
         images: [
@@ -37,7 +37,7 @@ const projectsData = [
       title: 'Dice Roller - GUI',
       description: 'A Dice rolling tool for your desktop.',
       fullDescription: 'Built as practice for enhancing my knowledge.',
-      tags: ['Next.js', 'GitHub', 'Tkinter', 'Desktop GUI',  'Math', 'Personal Project', ],
+      tags: ['Next.js',  'Tkinter', 'Desktop GUI', 'GitHub', 'Math', 'Personal Project', ],
       target: 'My first GUI.',
       problem: 'Needed a project that could be visible.',
       empathy: 'Added a button.',
@@ -54,7 +54,7 @@ const projectsData = [
       title: 'Dice Roller - Web App',
       description: 'A Dice rolling tool for an application.',
       fullDescription: 'Built to enhance tabletop gaming and practice full-stack concepts.',
-      tags: ['React', 'Tailwind', 'JavaScript', 'Next.js', 'GitHub', 'UI/UX', 'Personal Project'],
+      tags: ['React', 'Tailwind', 'JavaScript', 'Next.js',  'UI/UX', 'GitHub','Personal Project'],
       target: 'Kids and RPG fans who enjoy whimsical games',
       problem: 'Needed a tool to simulate dice logic in a fantasy setting',
       empathy: 'Added sounds, scroll visuals, and large dice for accessibility',
@@ -157,7 +157,7 @@ const projectsData = [
       description: "A clean, Tkinter-based desktop calculator.",
       fullDescription:
         "A simple but stylish GUI calculator built with Python and Tkinter. This project highlights utility-focused thinking, visual layout precision, and branding polish with a custom favicon.",
-      tags: ['Python', 'Next.js', 'GitHub' ,'Tkinter', 'Desktop GUI', 'Math', 'Utilities', ],
+      tags: ['Python', 'Next.js', 'Tkinter', 'Desktop GUI', 'GitHub' , 'Math', 'Utilities'],
       target: "Desktop users who need a quick, intuitive calculator tool.",
       problem: "Created to reinforce GUI layout and event handling with Python.",
       empathy: "Designed for easy use, clear layout, and soft colors for visual comfort.",
@@ -175,7 +175,7 @@ const projectsData = [
       description: "A static HTML/CSS portfolio project with hamburger nav.",
       fullDescription:
         "This was my first portfolio website, hand-coded in HTML and CSS with a floating menu, smooth scroll, and contact section. It marked the beginning of my front-end journey and laid the foundation for my upgraded React + Next projects.",
-      tags: ['HTML', 'CSS', 'JavaScript', 'Static',  'GitHub', 'Client Work', 'Website', 'Personal Project', 'Layout', 'Responsive Design'],
+      tags: ['HTML', 'CSS', 'JavaScript', 'Static',  'GitHub', 'Personal Project', 'Client Work', 'Website', 'Layout', 'Responsive Design'],
       uxDetails: {
         text: "I created my first portfolio using only static HTML and CSS — no frameworks or dev server. It was built through self-taught tutorials and trial-and-error, and gave me the foundation to develop my current full-stack projects.",
         images: [],

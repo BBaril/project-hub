@@ -179,24 +179,23 @@ export default function ProjectCard({ project }) {
 }
 
 function tagColor(tag) {
-    const frontend = ['React', 'Tailwind', 'JavaScript', 'HTML', 'CSS', 'UI/UX', 'Figma', 'Next.js', 'JSON', 'Static', 'GitHub'];
-    const backend = ['Flask', 'API', 'Auth', 'Python', 'Java', 'Node.js', 'Django', 'Login', 'Security'];
-    const database = ['MySQL', 'SQLite'];
-    const gui = ['Tkinter', 'Desktop GUI'];
-    const mobile = ['Flutter (Dart)'];
-    const creative = ['Photoshop', 'Creative', 'Animation', 'Audio', 'Adventure Story', 'Sound', 'Personal Project'];
-    const tools = ['Terminal', 'CLI', 'ETL', 'Dev Tool', 'Math', 'Utilities'];
-    const client = ['Client Work', 'Website', 'Layout', 'Responsive Design'];
+    const frontend = ['React', 'Next.js', 'Tailwind', 'JavaScript', 'HTML', 'CSS', 'UI/UX', 'Figma', 'Static'];
+    const backend = ['Python', 'Flask', 'Node.js', 'Auth', 'Security', 'JSON', 'API', 'Login'];
+    const database = ['SQLite', 'MySQL'];
+    const gui = ['Tkinter', 'Desktop GUI', 'Flutter (Dart)'];
+    const tools = ['GitHub', 'VS Code', 'Netlify', 'Vercel', 'Terminal', 'CLI', 'Photoshop', 'ETL', 'Dev Tool', 'Math', 'Utilities'];
+    const ux = ['Accessibility', 'Responsive Design', 'Psychology', 'Customer Service', 'Teamwork', 'Adaptability', 'Problem Solving', 'Client Work', 'Website', 'Layout', 'Responsive Design'];
+    const creative = ['Creative', 'Animation', 'Sound', 'Audio', 'Adventure Story', 'Personal Project'];
+    
+
   
     if (frontend.includes(tag)) return 'bg-bbPink/80';
     if (backend.includes(tag)) return 'bg-bbBlueSoft/80';
     if (database.includes(tag)) return 'bg-bbGreenSoft/80';
     if (gui.includes(tag)) return 'bg-bbBlue/80';
-    if (mobile.includes(tag)) return 'bg-bbGreen/80';
     if (creative.includes(tag)) return 'bg-bbTeal/80';
     if (tools.includes(tag)) return 'bg-bbPurple/80';
-    if (client.includes(tag)) return 'bg-bbOrange/80';
-  
+    if (ux.includes(tag)) return 'bg-bbOrange/80';
     return 'bg-black'; // fallback
   }
   

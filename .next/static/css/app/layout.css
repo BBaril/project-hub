@@ -1118,10 +1118,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(43 43 43 / var(--tw-text-opacity, 1));
 }
-.text-bbOffWhite {
-  --tw-text-opacity: 1;
-  color: rgb(245 250 255 / var(--tw-text-opacity, 1));
-}
 .text-bbPurpleDark\/90 {
   color: rgb(153 102 204 / 0.9);
 }
@@ -1132,6 +1128,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -1139,22 +1139,6 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
-}
-.text-bbOffWhite\/90 {
-  color: rgb(245 250 255 / 0.9);
-}
-.text-bbOffWhiteSoft\/90 {
-  color: rgb(246 251 246 / 0.9);
-}
-.text-bbOffWhiteSoft\/85 {
-  color: rgb(246 251 246 / 0.85);
-}
-.text-bbOffWhiteSoft\/80 {
-  color: rgb(246 251 246 / 0.8);
-}
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 .underline {
   text-decoration-line: underline;
@@ -1474,52 +1458,6 @@ select option {
 .dark\:text-gray-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-bbOffWhite\/95:is(.dark *) {
-  color: rgb(245 250 255 / 0.95);
-}
-
-.dark\:text-bbOffWhite\/90:is(.dark *) {
-  color: rgb(245 250 255 / 0.9);
-}
-
-.dark\:text-bbOffWhite\/75:is(.dark *) {
-  color: rgb(245 250 255 / 0.75);
-}
-
-.dark\:text-bbOffWhiteSoft\/75:is(.dark *) {
-  color: rgb(246 251 246 / 0.75);
-}
-
-.dark\:text-gray-200:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-gray-500:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-bbOffWhite\/70:is(.dark *) {
-  color: rgb(245 250 255 / 0.7);
-}
-
-.dark\:text-bbTealDark\/75:is(.dark *) {
-  color: rgb(92 184 184 / 0.75);
-}
-
-.dark\:text-bbOffWhiteSoft\/65:is(.dark *) {
-  color: rgb(246 251 246 / 0.65);
-}
-
-.dark\:text-bbOffWhiteSoft\/80:is(.dark *) {
-  color: rgb(246 251 246 / 0.8);
-}
-
-.dark\:text-bbOffWhiteSoft\/60:is(.dark *) {
-  color: rgb(246 251 246 / 0.6);
 }
 
 .dark\:hover\:bg-bbOrange:hover:is(.dark *) {
