@@ -46,7 +46,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
         {/* Left side: Dropdown or TagFilter */}
         {isMobile ? (
           <TagBox
@@ -80,8 +80,8 @@ export default function Projects() {
           }, {})
         ).map(([group, projects]) => (
           <div key={group} id={group} className="mb-2">
-          {/* Group Heading */}
-          <div className="flex items-center mb-0.5 mt-4 gap-2">
+            {/* Group Heading */}
+            <div className="flex items-center mb-0.5 mt-4 gap-2">
               <Image
                 src="/checked.png"
                 alt="Checkmark"
@@ -96,7 +96,7 @@ export default function Projects() {
                 height={24}
                 className="hidden dark:block"
               />
-              <span className="text-xl font-title font-semibold custom-title-shadow2 text-black  dark:text-gray-300">
+              <span className="text-xl font-title font-semibold custom-title-shadow2 text-black  dark:text-bbOffWhite/85">
                 {formatGroupTitle(group)}
               </span>
             </div>

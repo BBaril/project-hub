@@ -22,9 +22,9 @@ export default function ProjectCard({ project }) {
   }, []);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 rounded-xl shadow p-4 hover:shadow-xl transition">
-      <h3 className="text-lg font-semibold">{project.title}</h3>
-      <p className="text-sm mb-2">{project.description}</p>
+    <div className="bg-gray-100 dark:bg-bbOffBlackSoft rounded-xl shadow p-4 hover:shadow-xl transition">
+      <h3 className="text-lg font-semibold dark:text-bbOffWhiteSoft/85">{project.title}</h3>
+      <p className="text-sm mb-2 dark:text-bbOffWhiteSoft/70">{project.description}</p>
 
 
    {/* TAGS */}
@@ -43,24 +43,24 @@ export default function ProjectCard({ project }) {
     {/* BUTTONS */}
       <button
         onClick={() => setShowModal(true)}
-        className="mr-2 dark:text-bbBlue text-bbBlue text-sm font-semibold underline hover:text-bbPinkDark"
+        className="mr-2 dark:text-bbBlue/90 text-bbBlue/90 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90"
         aria-label={`Open project details for ${project.title}`}>
        View Details
       </button>
       {project.uxDetails && (
       <button
         onClick={() => setShowUX(true)}
-        className="text-bbTealDark dark:text-bbTealDark text-sm font-semibold underline hover:text-bbPinkDark">
+        className="text-bbTealDark/90 dark:text-bbTealDark/90 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90">
         UX Journey
       </button>
       )}
 
 
     {showUX && (
-      <div className="fixed inset-0 bg-bbTeal bg-opacity-10 flex items-center justify-center z-50">
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-xl max-w-3xl w-full overflow-auto max-h-[90vh]">
-          <h3 className="text-xl font-semibold mb-4">UX Journey</h3>
-          <p className="mb-4 italic">{project.uxDetails.text}</p>
+      <div className="fixed inset-0 bg-bbTeal/15 dark:bg-bbPink/15 flex items-center justify-center z-50">
+        <div className="bg-bbOffWhite dark:bg-bbOffBlack p-6 rounded-xl max-w-3xl w-full overflow-auto max-h-[90vh]">
+          <h3 className="text-xl font-semibold mb-4 text-black dark:text-bbOffWhiteSoft/85">UX Journey</h3>
+          <p className="mb-4 italic text-black dark:text-bbOffWhiteSoft/70">{project.uxDetails.text}</p>
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
              {project.uxDetails.images.map((src, index) => (
               <img key={index} src={src} alt={`UX ${index + 1}`} className="rounded shadow" />
@@ -68,7 +68,7 @@ export default function ProjectCard({ project }) {
           </div>
           <button
             onClick={() => setShowUX(false)}
-            className="mt-4 px-3 py-1 bg-bbPink text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbTeal"
+            className="mt-4 px-3 py-1 bg-bbTeal/85 text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbPink/85"
           >
             Close
           </button>
@@ -78,25 +78,39 @@ export default function ProjectCard({ project }) {
 
     {/* Screenshot Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-bbTeal bg-opacity-10 flex items-center justify-center z-50">
-          <div className="bg-bbOffWhite dark:bg-gray-900 text-black dark:text-bbOffWhite p-6 rounded-xl max-w-lg w-full overflow-auto max-h-[90vh]">
-            <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-            <p className="italic text-sm mb-4">{project.fullDescription}</p>
+        <div className="fixed inset-0 bg-bbTeal/15 dark:bg-bbPink/15 bg-opacity-10 flex items-center justify-center z-50">
+          <div className="bg-bbOffWhite dark:bg-bbOffBlack  p-6 rounded-xl max-w-lg w-full overflow-auto max-h-[90vh]">
+            <h3 className="text-2xl font-bold text-black dark:text-bbOffWhiteSoft/85 mb-2">{project.title}</h3>
+            <p className="italic text-sm mb-4 text-black dark:text-bbOffWhiteSoft/70">{project.fullDescription}</p>
             <div className="text-sm space-y-2">
-              <p><strong>Target Audience:</strong> {project.target}</p>
-              <p><strong>Problem Solved:</strong> {project.problem}</p>
-              <p><strong>Empathy Notes:</strong> {project.empathy}</p>
-              <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
-              <p><strong>Features:</strong> {project.features.join(', ')}</p>
+              <p>
+                <strong className="text-black dark:text-gray-300">Target Audience:</strong>
+                <span className="ml-1 text-gray-700 dark:text-gray-400">{project.target}</span>
+              </p>
+              <p>
+                <strong className="text-black dark:text-gray-300">Problem Solved:</strong>
+                <span className="ml-1 text-gray-700 dark:text-gray-400">{project.problem}</span>
+              </p>
+              <p>
+                <strong className="text-black dark:text-gray-300">Empathy Notes:</strong>
+                <span className="ml-1 text-gray-700 dark:text-gray-400">{project.empathy}</span>
+              </p>
+              <p>
+                <strong className="text-black dark:text-gray-300">Technologies:</strong>
+                <span className="ml-1 text-gray-700 dark:text-gray-400">{project.technologies.join(', ')}</span>
+              </p>
+              <p>
+                <strong className="text-black dark:text-gray-300">Features:</strong>
+                <span className="ml-1 text-gray-700 dark:text-gray-400">{project.features.join(', ')}</span>
+              </p>
             </div>
-
-        <div className="mt-4 flex flex-wrap gap-4">
+            <div className="mt-4 flex flex-wrap gap-4">
         {project.demo ? (
           <a
           href={project.demo}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-bbBlueDark dark:text-bbBlueDark underline font-bold hover:text-bbPinkDark"
+          className="text-bbBlueDark/90 dark:text-bbBlueDark/90 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
           >
           Live Demo
           </a>
@@ -105,7 +119,7 @@ export default function ProjectCard({ project }) {
         {project.screenshot && (
           <button
             onClick={() => setShowScreenshots(true)}
-            className= "text-bbOrange dark:text-bbOrange underline font-bold hover:text-bbPinkDark "
+            className= "text-bbPurpleDark/90 dark:text-bbPurple/90 underline font-bold hover:text-bbPinkDark/85 dark:hover:text-bbPink/95"
           >
           View Screenshot{Array.isArray(project.screenshot) && project.screenshot.length > 1 ? 's' : ''}
           </button>
@@ -116,7 +130,7 @@ export default function ProjectCard({ project }) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-bbTealDark dark:text-bbTealDark underline font-bold hover:text-bbPinkDark"
+          className="text-bbTealDark/90 dark:text-bbTealDark/90 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
           >
           GitHub
           </a>
@@ -124,7 +138,7 @@ export default function ProjectCard({ project }) {
         </div>
             <button
               onClick={() => setShowModal(false)}
-              className="mt-4 px-3 py-1 bg-bbPink text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbTeal"
+              className="mt-4 px-3 py-1 bg-bbTeal/85 text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbPink/85"
             >
               Close
             </button>
@@ -133,8 +147,8 @@ export default function ProjectCard({ project }) {
       )}
 
       {showScreenshots && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-6 rounded-xl max-w-3xl w-full overflow-auto max-h-[90vh]">
+        <div className="fixed inset-0 bg-Teal/15 Dark:bgbbPink/15 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-900 text-black dark:text-bbOffWhite/85 p-6 rounded-xl max-w-3xl w-full overflow-auto max-h-[90vh]">
             <h3 className="text-xl font-semibold mb-4">Screenshots</h3>
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
               {Array.isArray(project.screenshot)
@@ -152,7 +166,7 @@ export default function ProjectCard({ project }) {
           </div>
           <button
             onClick={() => setShowScreenshots(false)}
-            className="mt-4 px-3 py-1 bg-bbPink text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbTeal"
+            className="mt-4 px-3 py-1 bg-bbTeal/85 text-bbOffBlack dark:text-bbOffBlack rounded hover:bg-bbPink/85"
           >
             Close
           </button>
@@ -174,14 +188,14 @@ function tagColor(tag) {
     const tools = ['Terminal', 'CLI', 'ETL', 'Dev Tool', 'Math', 'Utilities'];
     const client = ['Client Work', 'Website', 'Layout', 'Responsive Design'];
   
-    if (frontend.includes(tag)) return 'bg-bbPink';
-    if (backend.includes(tag)) return 'bg-bbBlueSoft';
-    if (database.includes(tag)) return 'bg-bbGreenSoft';
-    if (gui.includes(tag)) return 'bg-bbBlue';
-    if (mobile.includes(tag)) return 'bg-bbGreen';
-    if (creative.includes(tag)) return 'bg-bbTeal';
-    if (tools.includes(tag)) return 'bg-bbPurple';
-    if (client.includes(tag)) return 'bg-bbOrange';
+    if (frontend.includes(tag)) return 'bg-bbPink/80';
+    if (backend.includes(tag)) return 'bg-bbBlueSoft/80';
+    if (database.includes(tag)) return 'bg-bbGreenSoft/80';
+    if (gui.includes(tag)) return 'bg-bbBlue/80';
+    if (mobile.includes(tag)) return 'bg-bbGreen/80';
+    if (creative.includes(tag)) return 'bg-bbTeal/80';
+    if (tools.includes(tag)) return 'bg-bbPurple/80';
+    if (client.includes(tag)) return 'bg-bbOrange/80';
   
     return 'bg-black'; // fallback
   }

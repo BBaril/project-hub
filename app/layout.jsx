@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <body className={`${merriweather.variable} ${inter.variable} font-body bg-bbOffWhite text-bbOffBlack dark:bg-gray-900 dark:text-bbOffWhiteSoft`}>
+      <body className={`${merriweather.variable} ${inter.variable} scroll-smooth font-body bg-bbOffWhite text-bbOffBlack dark:bg-bbOffBlack dark:text-bbOffWhiteSoft`}>
         <Providers>
           <Header />
           <main className="min-h-screen">{children}</main>
