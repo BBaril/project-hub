@@ -43,14 +43,14 @@ export default function ProjectCard({ project }) {
     {/* BUTTONS */}
       <button
         onClick={() => setShowModal(true)}
-        className="mr-2 dark:text-bbBlue/90 text-bbBlue/90 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90"
+        className="mr-2 dark:text-bbBlueSoft/80 text-bbBlue/80 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90"
         aria-label={`Open project details for ${project.title}`}>
        View Details
       </button>
       {project.uxDetails && (
       <button
         onClick={() => setShowUX(true)}
-        className="text-bbTealDark/90 dark:text-bbTealDark/90 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90">
+        className="text-bbPurpleDark/80 dark:text-bbPurple/80 text-sm font-semibold underline hover:text-bbPinkDark/90 dark:hover:text-bbPink/90">
         UX Journey
       </button>
       )}
@@ -110,7 +110,7 @@ export default function ProjectCard({ project }) {
           href={project.demo}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-bbBlueDark/90 dark:text-bbBlueDark/90 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
+          className="text-bbBlueDark/80 dark:text-bbBlueDark/80 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
           >
           Live Demo
           </a>
@@ -119,7 +119,7 @@ export default function ProjectCard({ project }) {
         {project.screenshot && (
           <button
             onClick={() => setShowScreenshots(true)}
-            className= "text-bbPurpleDark/90 dark:text-bbPurple/90 underline font-bold hover:text-bbPinkDark/85 dark:hover:text-bbPink/95"
+            className= "text-bbPurpleDark/80 dark:text-bbPurple/80 underline font-bold hover:text-bbPinkDark/85 dark:hover:text-bbPink/95"
           >
           View Screenshot{Array.isArray(project.screenshot) && project.screenshot.length > 1 ? 's' : ''}
           </button>
@@ -130,7 +130,7 @@ export default function ProjectCard({ project }) {
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-bbTealDark/90 dark:text-bbTealDark/90 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
+          className="text-bbTealDark/80 dark:text-bbTealDark/80 underline font-bold hover:text-bbPinkDark dark:hover:text-bbPink/95"
           >
           GitHub
           </a>
@@ -189,13 +189,13 @@ function tagColor(tag) {
     
 
   
-    if (frontend.includes(tag)) return 'bg-bbPink/80';
-    if (backend.includes(tag)) return 'bg-bbBlueSoft/80';
-    if (database.includes(tag)) return 'bg-bbGreenSoft/80';
-    if (gui.includes(tag)) return 'bg-bbBlue/80';
-    if (creative.includes(tag)) return 'bg-bbTeal/80';
-    if (tools.includes(tag)) return 'bg-bbPurple/80';
-    if (ux.includes(tag)) return 'bg-bbOrange/80';
+    if (frontend.includes(tag)) return 'bg-bbPink/75';
+    if (backend.includes(tag)) return 'bg-bbBlueSoft/75';
+    if (database.includes(tag)) return 'bg-bbGreenSoft/75';
+    if (gui.includes(tag)) return 'bg-bbBlue/60';
+    if (creative.includes(tag)) return 'bg-bbTeal/75';
+    if (tools.includes(tag)) return 'bg-bbPurple/75';
+    if (ux.includes(tag)) return 'bg-bbOrange/75';
     return 'bg-black'; // fallback
   }
   

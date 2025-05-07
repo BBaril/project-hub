@@ -105,7 +105,7 @@ export default function Header() {
                   Utility
                 </a>
                 <a
-                  href="https://bethanybaril.com/#contact"
+                  href="https://bethanybaril.com/#cards"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMenuOpen(false)}
