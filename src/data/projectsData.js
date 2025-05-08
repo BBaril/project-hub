@@ -139,15 +139,15 @@ const projectsData = [
       title: 'Whispers of Wisdom',
       description: 'A magical choose-your-own-adventure story for kids.',
       fullDescription: 'An interactive storybook with branching paths, animated visuals, and hidden dice-based challenges.',
-      tags: ['React', 'Tailwind', 'Next.js', 'UI/UX', 'GitHub', 'Sound', 'Animation', 'Adventure Story', 'Creative', 'Personal Project'],
+      tags: ['React', 'UI/UX', 'GitHub', 'Sound', 'Animation', 'Adventure Story', 'Creative', 'Personal Project'],
       target: 'Children ages 7–10, especially those who enjoy stories with exploration and puzzles.',
       problem: 'Needed a way to transform a Python storybook into an immersive web format.',
       empathy: 'Created with children in mind: bright visuals, large text, audio, and gentle difficulty.',
-      technologies: ['React', 'Tailwind CSS', 'Audio', 'Custom Story Engine'],
+      technologies: ['React', 'Audio', 'Custom Story Engine'],
       features: ['Dice mechanics', 'Token collection', 'Mini-puzzles'],
       screenshot: '', // No image 
-      demo: '', // no demo
-      github: '', // no github
+      demo: 'https://whispersofwisdom.netlify.app/',
+      github: 'https://github.com/BBaril/whispers.of.wisdom',
       group: 'creative-projects'
     },
     
