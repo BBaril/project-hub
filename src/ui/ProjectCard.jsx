@@ -181,21 +181,22 @@ export default function ProjectCard({ project }) {
 function tagColor(tag) {
     const frontend = ['React', 'Next.js', 'Tailwind', 'JavaScript', 'HTML', 'CSS', 'UI/UX', 'Figma', 'Static'];
     const backend = ['Python', 'Flask', 'Node.js', 'Auth', 'Security', 'JSON', 'API', 'Login'];
-    const database = ['SQLite', 'MySQL'];
+    const database = ['SQLite', 'MySQL', 'SQL',];
     const gui = ['Tkinter', 'Desktop GUI', 'Flutter (Dart)'];
-    const tools = ['GitHub', 'VS Code', 'Netlify', 'Vercel', 'Terminal', 'CLI', 'Photoshop', 'ETL', 'Dev Tool', 'Math', 'Utilities'];
-    const ux = ['Accessibility', 'Responsive Design', 'Psychology', 'Customer Service', 'Teamwork', 'Adaptability', 'Problem Solving', 'Client Work', 'Website', 'Layout', 'Responsive Design'];
+    const tools = ['GitHub', 'VS Code', 'Netlify', 'Vercel', 'Terminal', 'CLI', 'Photoshop', 'ETL', 'Dev Tool', 'Math', 'Utilities', 'Power BI'];
+    const ux = ['Accessibility', 'Responsive Design', 'Psychology', 'Customer Service', 'Data Visualization', 'Teamwork', 'Adaptability', 'Problem Solving', 'Client Work', 'Website', 'Layout', 'Responsive Design'];
     const creative = ['Creative', 'Animation', 'Sound', 'Audio', 'Adventure Story', 'Personal Project'];
-    
+    const analytics = [ 'Business Intelligence', 'Data Analysis', 'DAX'];
 
   
     if (frontend.includes(tag)) return 'bg-bbPink/75';
     if (backend.includes(tag)) return 'bg-bbBlueSoft/75';
-    if (database.includes(tag)) return 'bg-bbGreenSoft/75';
+    if (database.includes(tag)) return 'bg-bbPinkDark/75';
     if (gui.includes(tag)) return 'bg-bbBlue/60';
     if (creative.includes(tag)) return 'bg-bbTeal/75';
-    if (tools.includes(tag)) return 'bg-bbPurple/75';
+    if (tools.includes(tag)) return 'bg-bbGreenSoft/75';
     if (ux.includes(tag)) return 'bg-bbOrange/75';
+    if (analytics.includes(tag)) return 'bg-bbGreenDark/75';
     return 'bg-black'; // fallback
   }
   

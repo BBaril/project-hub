@@ -189,6 +189,35 @@ const projectsData = [
       group: 'client-work',
       github: 'https://github.com/BBaril/bethany.baril.portfolio',
       demo: 'https://bethany-baril-portfolio.netlify.app/'
+    },
+
+    {
+      id: 11,
+      title: "Barber Shop Business Insights — Power BI Dashboard",
+      description: "An interactive Power BI dashboard analyzing web traffic, bookings, and revenue for a mock barber shop business.",
+      fullDescription:
+        "Interactive dashboard created in Power BI with mock data for a local barbershop. Includes KPI cards, monthly traffic vs bookings trend, a web-to-booking conversion funnel, service mix analysis, and payment method breakdown. Demonstrates skills in data modeling, DAX measure creation, and dashboard design with a polished, business-ready look.",
+      tags: ['Power BI', 'Data Visualization', 'DAX', 'Business Intelligence', 'Data Analysis', 'SQL'],
+      uxDetails: {
+        text: "Designed for clarity and business readability with consistent KPI cards, clean trend visuals, and intuitive funnels. Color palette and alignment polished for executive presentation quality.",
+        images: ['/images/marcusBI.png', '/images/marcusBI-2.png'],
+      },      
+      target: "Business leaders and hiring managers looking for examples of data-driven dashboards.",
+      problem: "Small businesses often lack visibility into their customer journey — from website visits through to actual bookings and revenue — limiting their ability to improve conversion and performance.",
+      empathy: "This project demonstrates how even small businesses can benefit from accessible, professional-quality analytics to better understand performance and make smarter decisions.",
+      technologies: ['Power BI', 'SQL', 'DAX'],
+      features: [
+        'KPI cards for high-level insights',
+        'Traffic vs bookings trend chart with dual axes',
+        'Web-to-booking funnel with conversion percentages',
+        'Service mix donut chart',
+        'Payment method breakdown stacked columns',
+      ],
+      screenshot: ['/images/marcusBI.png', '/images/marcusBI-2.png'],
+      group: 'client-work',
+      github: '',    // no github
+      demo: '',      // no demo
+
     }
     
 
