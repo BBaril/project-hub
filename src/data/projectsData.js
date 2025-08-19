@@ -218,8 +218,35 @@ const projectsData = [
       github: '',    // no github
       demo: '',      // no demo
 
+    },
+  
+    {
+      id: 12,
+      title: "Restaurant Business Insights — Power BI Dashboard",
+      description: "Mock restaurant data visualized in Power BI with key business metrics and trends.",
+      fullDescription:
+        "An interactive Power BI dashboard built with mock restaurant datasets. Features six KPI cards (Guests, Revenue, Avg. Check, Food Cost %, Labor Cost %, and Gross Margin %), a trend chart of guest count vs. revenue, a service mix analysis (Dine-In, Takeout, Delivery), and a cost breakdown showing Food, Labor, and Profit. Demonstrates skills in data modeling, DAX measure creation, and dashboard design. Built as a portfolio piece to illustrate real-world business intelligence capabilities.",
+      tags: ['Power BI', 'Data Visualization', 'DAX', 'Business Intelligence', 'Data Analysis', 'SQL',],
+      uxDetails: {
+        text: "Designed for clarity and business readability with consistent KPI cards, clean trend visuals, and intuitive funnels. Color palette and alignment polished for executive presentation quality.",
+        images: ['/images/restaurantBI.png'],
+      },      
+      target: "Restaurant operators and small business owners looking for data insights",
+      problem: "Restaurant owners need visibility into key performance metrics — customer counts, revenue, average spend, cost ratios, and service type mix — to make better decisions.",
+      empathy: "With 20+ years of hospitality experience, I understand how food and labor costs drive profitability and how operators need simple, visual insights instead of raw numbers.",
+      technologies: ['Power BI', 'SQL', 'DAX'],
+      features: [
+        'Interactive KPI cards',
+        'Trend analysis with dual-axis charts',
+        'Service type breakdown',
+        'Cost structure visualization',
+      ],
+      screenshot: ['/images/restaurantBI.png'],
+      group: 'client-work',
+      github: '',  // no github
+      demo: '',    // no demo
+
     }
-    
 
   ];
   
